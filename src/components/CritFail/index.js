@@ -30,6 +30,7 @@ class CritFail extends Component {
 
     render() {
         const diceOptions = [4,6,8,10,12,20];
+        const rolls = this.props.rolls.reverse().slice(50);
         return (
             <div className={'crit-fail'}>
                 <div>
@@ -40,7 +41,7 @@ class CritFail extends Component {
                     <button onClick={this.rollDie.bind(this)}>Roll</button>
                 </div>
                 <ul>
-                    {this.props.rolls.order.map(this.rollToComponent.bind(this))}
+                    {rolls.order.map(this.rollToComponent.bind(this))}
                 </ul>
 
             </div>

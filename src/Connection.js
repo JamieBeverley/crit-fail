@@ -6,7 +6,6 @@ Connection.init = function(host=window.location.hostname,port=8000, onOpen=()=>{
     if (Connection.ws){
         Connection.ws.close();
     }
-    debugger
     var WebSocket;
     if(typeof window!=='undefined'){
         WebSocket = window.WebSocket || window.MozWebSocket;

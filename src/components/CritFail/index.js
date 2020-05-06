@@ -7,6 +7,10 @@ class CritFail extends Component {
         die:20
     };
 
+    componentDidMount() {
+        this.props.actions.CONNECT()
+    }
+
     rollToComponent(id,index){
         const roll = this.props.rolls.values[id];
         return <li key={index}>{roll.name} - {roll.value}</li>

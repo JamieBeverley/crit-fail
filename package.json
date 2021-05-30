@@ -14,7 +14,7 @@
     "redux": "^4.0.5",
     "redux-actions": "^2.6.5",
     "redux-logger": "^3.0.6",
-    "ws": "^7.2.5"
+    "ws": "^7.4.6"
   },
   "scripts": {
     "server": "nodemon --inspect --exec babel-node src/backend/index.js",
